@@ -1,0 +1,34 @@
+test_every_actual_source_precedes_its_origin (test_frozen_data.FrozenDataContract.test_every_actual_source_precedes_its_origin) ... ok
+test_every_snapshot_has_server_recorded_publisher_proof (test_frozen_data.FrozenDataContract.test_every_snapshot_has_server_recorded_publisher_proof) ... ok
+test_every_training_label_precedes_fit (test_frozen_data.FrozenDataContract.test_every_training_label_precedes_fit) ... ok
+test_model_selection_is_before_first_test_origin (test_frozen_data.FrozenDataContract.test_model_selection_is_before_first_test_origin) ... ok
+test_news_sample_has_no_download_failures (test_frozen_data.FrozenDataContract.test_news_sample_has_no_download_failures) ... ok
+test_budget_tracks_eligible_window_not_full_frame (test_models.CountModelContract.test_budget_tracks_eligible_window_not_full_frame) ... ok
+test_final_revised_truth_not_used_as_input_or_fit_target (test_models.CountModelContract.test_final_revised_truth_not_used_as_input_or_fit_target) ... ok
+test_future_labels_and_text_cannot_affect_estimator (test_models.CountModelContract.test_future_labels_and_text_cannot_affect_estimator) ... ok
+test_future_labels_cannot_affect_recent_level_offset (test_models.CountModelContract.test_future_labels_cannot_affect_recent_level_offset) ... ok
+test_missing_text_falls_back_to_numeric_poisson (test_models.CountModelContract.test_missing_text_falls_back_to_numeric_poisson) ... ok
+test_positive_mean_and_not_constant_when_signal_varies (test_models.CountModelContract.test_positive_mean_and_not_constant_when_signal_varies) ... ok
+test_recent_level_offset_matches_intercept_only_likelihood (test_models.CountModelContract.test_recent_level_offset_matches_intercept_only_likelihood) ... ok
+test_changed_pipeline_cannot_reuse_selection (test_selection.SelectionContract.test_changed_pipeline_cannot_reuse_selection) ... ok
+test_future_test_snapshots_and_articles_cannot_change_selection (test_selection.SelectionContract.test_future_test_snapshots_and_articles_cannot_change_selection) ... Validation history_poisson__direct__alpha0.1__window56: MAE=2.3993, features=2
+Validation history_news_poisson__direct__alpha0.1__window56: MAE=2.3897, features=2
+Validation history_poisson__direct__alpha0.1__window56: MAE=2.3993, features=2
+Validation history_news_poisson__direct__alpha0.1__window56: MAE=2.3897, features=2
+ok
+test_modified_selection_cannot_be_evaluated (test_selection.SelectionContract.test_modified_selection_cannot_be_evaluated) ... ok
+test_batch_not_available_even_if_article_claims_earlier (test_temporal_contract.TemporalContract.test_batch_not_available_even_if_article_claims_earlier) ... ok
+test_equal_origin_is_excluded (test_temporal_contract.TemporalContract.test_equal_origin_is_excluded) ... ok
+test_future_alert_snapshot_cannot_change_features (test_temporal_contract.TemporalContract.test_future_alert_snapshot_cannot_change_features) ... ok
+test_future_counts_in_same_snapshot_do_not_change_features (test_temporal_contract.TemporalContract.test_future_counts_in_same_snapshot_do_not_change_features) ... ok
+test_future_publication_ingestion_and_indexing_excluded (test_temporal_contract.TemporalContract.test_future_publication_ingestion_and_indexing_excluded) ... ok
+test_naive_origin_rejected (test_temporal_contract.TemporalContract.test_naive_origin_rejected) ... ok
+test_news_only_in_test_does_not_fit_vocabulary (test_temporal_contract.TemporalContract.test_news_only_in_test_does_not_fit_vocabulary) ... ok
+test_syndication_deduplication_is_within_origin (test_temporal_contract.TemporalContract.test_syndication_deduplication_is_within_origin) ... ok
+test_target_day_and_delayed_label_are_purged (test_temporal_contract.TemporalContract.test_target_day_and_delayed_label_are_purged) ... ok
+test_unknown_publication_is_not_inferred_from_url (test_temporal_contract.TemporalContract.test_unknown_publication_is_not_inferred_from_url) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 9.808s
+
+OK

@@ -1,0 +1,45 @@
+{
+  "selected_model": "history_news_poisson__recent7__alpha1__windowall",
+  "test_metrics": {
+    "rolling28": {
+      "MAE": 1.2971938775510206,
+      "RMSE": 1.513198131774498,
+      "Poisson_deviance": 0.5325358950294438
+    },
+    "rolling7": {
+      "MAE": 1.3928571428571426,
+      "RMSE": 1.6896615839337694,
+      "Poisson_deviance": 0.6653098736535414
+    },
+    "weekday8": {
+      "MAE": 1.4866071428571428,
+      "RMSE": 1.853598093670023,
+      "Poisson_deviance": 0.9116096532601539
+    },
+    "history_poisson": {
+      "MAE": 1.4719876928998912,
+      "RMSE": 1.7927111218145182,
+      "Poisson_deviance": 0.7859237328271809
+    },
+    "history_news_poisson": {
+      "MAE": 1.5177764799723223,
+      "RMSE": 1.8104427293858856,
+      "Poisson_deviance": 0.8003402335436665
+    }
+  },
+  "prediction_range": {
+    "min": 3.0210321711089065,
+    "max": 4.6630260621610375,
+    "std": 0.4638332110605198,
+    "distinct_rounded_2dp": 24
+  },
+  "feature_budget": {
+    "history_numeric_cap": 10,
+    "news_numeric_addition": 3,
+    "text_cap": 50,
+    "text_per_training_row_cap": "floor(n_train/3)",
+    "selected_total_min": 63,
+    "selected_total_max": 63
+  },
+  "historical_holdout_reused": true
+}

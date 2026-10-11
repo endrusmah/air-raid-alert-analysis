@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ukraine-alerts-asof"
+version = "0.2.0"
+description = "Leakage-aware civilian planning forecasts with versioned air-alert and archived news inputs"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "pandas>=2.2,<3", "scikit-learn>=1.5,<2", "scipy>=1.11,<2", "matplotlib>=3.8,<4"]
+
+[project.scripts]
+ua-alerts-acquire = "ua_alerts.acquire:main"
+ua-alerts-evaluate = "ua_alerts.evaluate:main"
+ua-alerts-forecast = "ua_alerts.forecast:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

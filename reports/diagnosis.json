@@ -1,0 +1,42 @@
+{
+  "diagnosis_scope": "training and validation only; no revised test forecasts or outcomes inspected",
+  "old_numeric_features": 54,
+  "old_text_cap": 300,
+  "old_max_features": 354,
+  "initial_training_rows": 139,
+  "old_model_selection": "28-day rolling mean selected by validation MAE; not an estimator fault",
+  "old_validation_mae": {
+    "rolling28": 2.1862244897959187,
+    "history_ridge": 2.3193094082140626,
+    "history_news_ridge": 2.3277031316759174
+  },
+  "old_validation_rolling28_range": [
+    2.2857142857142856,
+    3.892857142857143
+  ],
+  "available_initial_training_mean": 1.85,
+  "validation_mean": 3.75,
+  "changed_features": "10 history/calendar inputs + 3 optional news aggregates + at most min(50,n_train//3) unigrams",
+  "selected_poisson": "history_news_poisson__recent7__alpha1__windowall",
+  "selected_validation_mae": 2.3071974946067564,
+  "baseline_validation_mae": {
+    "rolling28": {
+      "MAE": 2.1862244897959187,
+      "RMSE": 2.6478682497853954,
+      "Poisson_deviance": 2.2763928373721716
+    },
+    "rolling7": {
+      "MAE": 2.2908163265306123,
+      "RMSE": 2.7823108460980537,
+      "Poisson_deviance": 2.3742186711108197
+    },
+    "weekday8": {
+      "MAE": 2.2544642857142856,
+      "RMSE": 2.884398457960639,
+      "Poisson_deviance": 2.940200208304836
+    }
+  },
+  "selection_pool_note": "compact Poisson models, as requested; averages are separate benchmarks",
+  "provenance_note": "The original historical test was already scored in v1; the revised selection excludes it, but it is a reused holdout.",
+  "same_frozen_origin_repeated_cli": "Default forecast origin is derived from the frozen acquisition cutoff; repeated runs with unchanged data intentionally reproduce the same forecast. Refresh the vintage or choose a different eligible noon origin for another forecast day."
+}

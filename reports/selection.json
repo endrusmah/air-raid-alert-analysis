@@ -1,0 +1,1048 @@
+{
+  "schema_version": 2,
+  "pipeline_sha256": "6197ffb326b722e39d81685cb24c78df30532cec2323df532bc9953c56efe0fc",
+  "selection_at": "2026-09-10 12:00:00+00:00",
+  "test": {
+    "start": "2026-09-11 00:00:00+00:00",
+    "end": "2026-10-08 00:00:00+00:00",
+    "days": 28
+  },
+  "validation": {
+    "start": "2026-08-13 00:00:00+00:00",
+    "end": "2026-09-09 00:00:00+00:00",
+    "days": 28,
+    "labels": "first usable vintage, published before selection"
+  },
+  "selection_pool": "compact Poisson models, as requested; averages are separate benchmarks",
+  "selection_metric": "validation MAE only",
+  "selected_model": "history_news_poisson__recent7__alpha1__windowall",
+  "selected_config": {
+    "name": "history_news_poisson__recent7__alpha1__windowall",
+    "with_news": true,
+    "alpha": 1.0,
+    "train_window": null,
+    "level_offset": true
+  },
+  "family_winners": {
+    "history_poisson": "history_poisson__recent7__alpha1__windowall",
+    "history_news_poisson": "history_news_poisson__recent7__alpha1__windowall"
+  },
+  "trials": {
+    "history_poisson__direct__alpha0.01__window56": {
+      "config": {
+        "name": "history_poisson__direct__alpha0.01__window56",
+        "with_news": false,
+        "alpha": 0.01,
+        "train_window": 56,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.478023924255646,
+        "RMSE": 3.080739960938399,
+        "Poisson_deviance": 2.964028997525746
+      },
+      "features_min": 9,
+      "features_max": 10,
+      "training_rows_min": 56,
+      "prediction_std": 2.183100951534773
+    },
+    "history_poisson__direct__alpha0.01__window112": {
+      "config": {
+        "name": "history_poisson__direct__alpha0.01__window112",
+        "with_news": false,
+        "alpha": 0.01,
+        "train_window": 112,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.508611813421155,
+        "RMSE": 3.0713642015491107,
+        "Poisson_deviance": 3.185297412387702
+      },
+      "features_min": 10,
+      "features_max": 10,
+      "training_rows_min": 112,
+      "prediction_std": 1.3594594528215183
+    },
+    "history_poisson__direct__alpha0.01__windowall": {
+      "config": {
+        "name": "history_poisson__direct__alpha0.01__windowall",
+        "with_news": false,
+        "alpha": 0.01,
+        "train_window": null,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.4746430477809715,
+        "RMSE": 3.013158518371593,
+        "Poisson_deviance": 2.9422564350610543
+      },
+      "features_min": 10,
+      "features_max": 10,
+      "training_rows_min": 139,
+      "prediction_std": 1.3212892802485106
+    },
+    "history_poisson__direct__alpha0.1__window56": {
+      "config": {
+        "name": "history_poisson__direct__alpha0.1__window56",
+        "with_news": false,
+        "alpha": 0.1,
+        "train_window": 56,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.499515393832262,
+        "RMSE": 3.0891009957655675,
+        "Poisson_deviance": 2.9756540537959046
+      },
+      "features_min": 9,
+      "features_max": 10,
+      "training_rows_min": 56,
+      "prediction_std": 2.1607719636105633
+    },
+    "history_poisson__direct__alpha0.1__window112": {
+      "config": {
+        "name": "history_poisson__direct__alpha0.1__window112",
+        "with_news": false,
+        "alpha": 0.1,
+        "train_window": 112,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.5098877559043262,
+        "RMSE": 3.0600640662677163,
+        "Poisson_deviance": 3.1425102049063045
+      },
+      "features_min": 10,
+      "features_max": 10,
+      "training_rows_min": 112,
+      "prediction_std": 1.3373565186713556
+    },
+    "history_poisson__direct__alpha0.1__windowall": {
+      "config": {
+        "name": "history_poisson__direct__alpha0.1__windowall",
+        "with_news": false,
+        "alpha": 0.1,
+        "train_window": null,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.4695083429502622,
+        "RMSE": 2.997157214047598,
+        "Poisson_deviance": 2.9121678016344954
+      },
+      "features_min": 10,
+      "features_max": 10,
+      "training_rows_min": 139,
+      "prediction_std": 1.3007022125729664
+    },
+    "history_poisson__direct__alpha1__window56": {
+      "config": {
+        "name": "history_poisson__direct__alpha1__window56",
+        "with_news": false,
+        "alpha": 1.0,
+        "train_window": 56,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.5260798894775767,
+        "RMSE": 3.0593008469691836,
+        "Poisson_deviance": 2.9130811566669585
+      },
+      "features_min": 9,
+      "features_max": 10,
+      "training_rows_min": 56,
+      "prediction_std": 2.0029432641745295
+    },
+    "history_poisson__direct__alpha1__window112": {
+      "config": {
+        "name": "history_poisson__direct__alpha1__window112",
+        "with_news": false,
+        "alpha": 1.0,
+        "train_window": 112,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.4519563042538013,
+        "RMSE": 3.003953704044165,
+        "Poisson_deviance": 2.9710487655417284
+      },
+      "features_min": 10,
+      "features_max": 10,
+      "training_rows_min": 112,
+      "prediction_std": 1.254630563542233
+    },
+    "history_poisson__direct__alpha1__windowall": {
+      "config": {
+        "name": "history_poisson__direct__alpha1__windowall",
+        "with_news": false,
+        "alpha": 1.0,
+        "train_window": null,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.4056517535975495,
+        "RMSE": 2.938481398953791,
+        "Poisson_deviance": 2.8232443659192774
+      },
+      "features_min": 10,
+      "features_max": 10,
+      "training_rows_min": 139,
+      "prediction_std": 1.2015894482082679
+    },
+    "history_poisson__recent7__alpha0.01__window56": {
+      "config": {
+        "name": "history_poisson__recent7__alpha0.01__window56",
+        "with_news": false,
+        "alpha": 0.01,
+        "train_window": 56,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.4467922091341014,
+        "RMSE": 3.0417893825749793,
+        "Poisson_deviance": 3.0807635694670314
+      },
+      "features_min": 9,
+      "features_max": 10,
+      "training_rows_min": 56,
+      "prediction_std": 1.6732833574069088
+    },
+    "history_poisson__recent7__alpha0.01__window112": {
+      "config": {
+        "name": "history_poisson__recent7__alpha0.01__window112",
+        "with_news": false,
+        "alpha": 0.01,
+        "train_window": 112,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.5613279793744645,
+        "RMSE": 3.180884270032423,
+        "Poisson_deviance": 3.7361972296909642
+      },
+      "features_min": 10,
+      "features_max": 10,
+      "training_rows_min": 112,
+      "prediction_std": 0.8789826587158714
+    },
+    "history_poisson__recent7__alpha0.01__windowall": {
+      "config": {
+        "name": "history_poisson__recent7__alpha0.01__windowall",
+        "with_news": false,
+        "alpha": 0.01,
+        "train_window": null,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.5092604558517815,
+        "RMSE": 3.1081583844708893,
+        "Poisson_deviance": 3.4376584284921443
+      },
+      "features_min": 10,
+      "features_max": 10,
+      "training_rows_min": 139,
+      "prediction_std": 0.7018963979658805
+    },
+    "history_poisson__recent7__alpha0.1__window56": {
+      "config": {
+        "name": "history_poisson__recent7__alpha0.1__window56",
+        "with_news": false,
+        "alpha": 0.1,
+        "train_window": 56,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.4878796909382284,
+        "RMSE": 3.088079587809541,
+        "Poisson_deviance": 3.119724655620359
+      },
+      "features_min": 9,
+      "features_max": 10,
+      "training_rows_min": 56,
+      "prediction_std": 1.7279146022290082
+    },
+    "history_poisson__recent7__alpha0.1__window112": {
+      "config": {
+        "name": "history_poisson__recent7__alpha0.1__window112",
+        "with_news": false,
+        "alpha": 0.1,
+        "train_window": 112,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.516165980597697,
+        "RMSE": 3.1355328225244956,
+        "Poisson_deviance": 3.531907139621283
+      },
+      "features_min": 10,
+      "features_max": 10,
+      "training_rows_min": 112,
+      "prediction_std": 0.8355999064778723
+    },
+    "history_poisson__recent7__alpha0.1__windowall": {
+      "config": {
+        "name": "history_poisson__recent7__alpha0.1__windowall",
+        "with_news": false,
+        "alpha": 0.1,
+        "train_window": null,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.4665255630018215,
+        "RMSE": 3.0636684801158123,
+        "Poisson_deviance": 3.2739473656359386
+      },
+      "features_min": 10,
+      "features_max": 10,
+      "training_rows_min": 139,
+      "prediction_std": 0.6949025082843693
+    },
+    "history_poisson__recent7__alpha1__window56": {
+      "config": {
+        "name": "history_poisson__recent7__alpha1__window56",
+        "with_news": false,
+        "alpha": 1.0,
+        "train_window": 56,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.517055989623033,
+        "RMSE": 3.117735882541612,
+        "Poisson_deviance": 2.9491777594935598
+      },
+      "features_min": 9,
+      "features_max": 10,
+      "training_rows_min": 56,
+      "prediction_std": 1.8901169403847635
+    },
+    "history_poisson__recent7__alpha1__window112": {
+      "config": {
+        "name": "history_poisson__recent7__alpha1__window112",
+        "with_news": false,
+        "alpha": 1.0,
+        "train_window": 112,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.408261541585508,
+        "RMSE": 2.9774695365309527,
+        "Poisson_deviance": 2.9085473723503945
+      },
+      "features_min": 10,
+      "features_max": 10,
+      "training_rows_min": 112,
+      "prediction_std": 1.0247545210770743
+    },
+    "history_poisson__recent7__alpha1__windowall": {
+      "config": {
+        "name": "history_poisson__recent7__alpha1__windowall",
+        "with_news": false,
+        "alpha": 1.0,
+        "train_window": null,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.349902475766626,
+        "RMSE": 2.9103253495636086,
+        "Poisson_deviance": 2.7901603679505653
+      },
+      "features_min": 10,
+      "features_max": 10,
+      "training_rows_min": 139,
+      "prediction_std": 0.8995740060540947
+    },
+    "history_news_poisson__direct__alpha0.01__window56": {
+      "config": {
+        "name": "history_news_poisson__direct__alpha0.01__window56",
+        "with_news": true,
+        "alpha": 0.01,
+        "train_window": 56,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 4.6228594710235145,
+        "RMSE": 8.168183837014602,
+        "Poisson_deviance": 7.540581544709535
+      },
+      "features_min": 30,
+      "features_max": 31,
+      "training_rows_min": 56,
+      "prediction_std": 8.187080762293622
+    },
+    "history_news_poisson__direct__alpha0.01__window112": {
+      "config": {
+        "name": "history_news_poisson__direct__alpha0.01__window112",
+        "with_news": true,
+        "alpha": 0.01,
+        "train_window": 112,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.771015977174224,
+        "RMSE": 3.3763716730062883,
+        "Poisson_deviance": 3.775734730451054
+      },
+      "features_min": 50,
+      "features_max": 50,
+      "training_rows_min": 112,
+      "prediction_std": 1.7415551062975145
+    },
+    "history_news_poisson__direct__alpha0.01__windowall": {
+      "config": {
+        "name": "history_news_poisson__direct__alpha0.01__windowall",
+        "with_news": true,
+        "alpha": 0.01,
+        "train_window": null,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.387447756109499,
+        "RMSE": 2.912382045509299,
+        "Poisson_deviance": 2.790961578946208
+      },
+      "features_min": 59,
+      "features_max": 63,
+      "training_rows_min": 139,
+      "prediction_std": 1.3897043978314678
+    },
+    "history_news_poisson__direct__alpha0.1__window56": {
+      "config": {
+        "name": "history_news_poisson__direct__alpha0.1__window56",
+        "with_news": true,
+        "alpha": 0.1,
+        "train_window": 56,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 3.06670482874966,
+        "RMSE": 3.945804143171397,
+        "Poisson_deviance": 4.122516372733095
+      },
+      "features_min": 30,
+      "features_max": 31,
+      "training_rows_min": 56,
+      "prediction_std": 3.480413969274998
+    },
+    "history_news_poisson__direct__alpha0.1__window112": {
+      "config": {
+        "name": "history_news_poisson__direct__alpha0.1__window112",
+        "with_news": true,
+        "alpha": 0.1,
+        "train_window": 112,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.506764051517698,
+        "RMSE": 3.0770930646324484,
+        "Poisson_deviance": 3.213676848998438
+      },
+      "features_min": 50,
+      "features_max": 50,
+      "training_rows_min": 112,
+      "prediction_std": 1.359737476946592
+    },
+    "history_news_poisson__direct__alpha0.1__windowall": {
+      "config": {
+        "name": "history_news_poisson__direct__alpha0.1__windowall",
+        "with_news": true,
+        "alpha": 0.1,
+        "train_window": null,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.373153985351343,
+        "RMSE": 2.9138452354595454,
+        "Poisson_deviance": 2.851771515138981
+      },
+      "features_min": 59,
+      "features_max": 63,
+      "training_rows_min": 139,
+      "prediction_std": 1.1870184701553617
+    },
+    "history_news_poisson__direct__alpha1__window56": {
+      "config": {
+        "name": "history_news_poisson__direct__alpha1__window56",
+        "with_news": true,
+        "alpha": 1.0,
+        "train_window": 56,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.619038327324081,
+        "RMSE": 3.1384282103683834,
+        "Poisson_deviance": 3.1536760785216
+      },
+      "features_min": 30,
+      "features_max": 31,
+      "training_rows_min": 56,
+      "prediction_std": 2.054670666677264
+    },
+    "history_news_poisson__direct__alpha1__window112": {
+      "config": {
+        "name": "history_news_poisson__direct__alpha1__window112",
+        "with_news": true,
+        "alpha": 1.0,
+        "train_window": 112,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.432520884029404,
+        "RMSE": 2.9855804449003442,
+        "Poisson_deviance": 2.988494515202923
+      },
+      "features_min": 50,
+      "features_max": 50,
+      "training_rows_min": 112,
+      "prediction_std": 1.2014793160419701
+    },
+    "history_news_poisson__direct__alpha1__windowall": {
+      "config": {
+        "name": "history_news_poisson__direct__alpha1__windowall",
+        "with_news": true,
+        "alpha": 1.0,
+        "train_window": null,
+        "level_offset": false
+      },
+      "scores": {
+        "MAE": 2.340885115938108,
+        "RMSE": 2.871909326017265,
+        "Poisson_deviance": 2.774639790930339
+      },
+      "features_min": 59,
+      "features_max": 63,
+      "training_rows_min": 139,
+      "prediction_std": 1.1053599898752053
+    },
+    "history_news_poisson__recent7__alpha0.01__window56": {
+      "config": {
+        "name": "history_news_poisson__recent7__alpha0.01__window56",
+        "with_news": true,
+        "alpha": 0.01,
+        "train_window": 56,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 3.5428037978615636,
+        "RMSE": 4.831360158766244,
+        "Poisson_deviance": 5.401718891402714
+      },
+      "features_min": 30,
+      "features_max": 31,
+      "training_rows_min": 56,
+      "prediction_std": 4.470083546484096
+    },
+    "history_news_poisson__recent7__alpha0.01__window112": {
+      "config": {
+        "name": "history_news_poisson__recent7__alpha0.01__window112",
+        "with_news": true,
+        "alpha": 0.01,
+        "train_window": 112,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.702697218111009,
+        "RMSE": 3.2942830104272565,
+        "Poisson_deviance": 3.996082491265144
+      },
+      "features_min": 50,
+      "features_max": 50,
+      "training_rows_min": 112,
+      "prediction_std": 1.1315714389864682
+    },
+    "history_news_poisson__recent7__alpha0.01__windowall": {
+      "config": {
+        "name": "history_news_poisson__recent7__alpha0.01__windowall",
+        "with_news": true,
+        "alpha": 0.01,
+        "train_window": null,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.4794121468742034,
+        "RMSE": 3.026332730462275,
+        "Poisson_deviance": 3.192925290927505
+      },
+      "features_min": 59,
+      "features_max": 63,
+      "training_rows_min": 139,
+      "prediction_std": 0.7431967517325956
+    },
+    "history_news_poisson__recent7__alpha0.1__window56": {
+      "config": {
+        "name": "history_news_poisson__recent7__alpha0.1__window56",
+        "with_news": true,
+        "alpha": 0.1,
+        "train_window": 56,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.7026451610329794,
+        "RMSE": 3.261477638862055,
+        "Poisson_deviance": 3.6617428125989746
+      },
+      "features_min": 30,
+      "features_max": 31,
+      "training_rows_min": 56,
+      "prediction_std": 2.0683235276772414
+    },
+    "history_news_poisson__recent7__alpha0.1__window112": {
+      "config": {
+        "name": "history_news_poisson__recent7__alpha0.1__window112",
+        "with_news": true,
+        "alpha": 0.1,
+        "train_window": 112,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.5159571636807305,
+        "RMSE": 3.1349078516989386,
+        "Poisson_deviance": 3.5424167696995856
+      },
+      "features_min": 50,
+      "features_max": 50,
+      "training_rows_min": 112,
+      "prediction_std": 0.8388209665081047
+    },
+    "history_news_poisson__recent7__alpha0.1__windowall": {
+      "config": {
+        "name": "history_news_poisson__recent7__alpha0.1__windowall",
+        "with_news": true,
+        "alpha": 0.1,
+        "train_window": null,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.4271252296023094,
+        "RMSE": 3.0179436280685166,
+        "Poisson_deviance": 3.1855098280044913
+      },
+      "features_min": 59,
+      "features_max": 63,
+      "training_rows_min": 139,
+      "prediction_std": 0.6265920290226237
+    },
+    "history_news_poisson__recent7__alpha1__window56": {
+      "config": {
+        "name": "history_news_poisson__recent7__alpha1__window56",
+        "with_news": true,
+        "alpha": 1.0,
+        "train_window": 56,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.5443250802409128,
+        "RMSE": 3.1248490875984567,
+        "Poisson_deviance": 3.031714138404907
+      },
+      "features_min": 30,
+      "features_max": 31,
+      "training_rows_min": 56,
+      "prediction_std": 1.8290919446577392
+    },
+    "history_news_poisson__recent7__alpha1__window112": {
+      "config": {
+        "name": "history_news_poisson__recent7__alpha1__window112",
+        "with_news": true,
+        "alpha": 1.0,
+        "train_window": 112,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.3924344181384014,
+        "RMSE": 2.9675132031048137,
+        "Poisson_deviance": 2.9057498021194097
+      },
+      "features_min": 50,
+      "features_max": 50,
+      "training_rows_min": 112,
+      "prediction_std": 0.9852147243647992
+    },
+    "history_news_poisson__recent7__alpha1__windowall": {
+      "config": {
+        "name": "history_news_poisson__recent7__alpha1__windowall",
+        "with_news": true,
+        "alpha": 1.0,
+        "train_window": null,
+        "level_offset": true
+      },
+      "scores": {
+        "MAE": 2.3071974946067564,
+        "RMSE": 2.8715371139764927,
+        "Poisson_deviance": 2.744810238569496
+      },
+      "features_min": 59,
+      "features_max": 63,
+      "training_rows_min": 139,
+      "prediction_std": 0.8302519931391608
+    }
+  },
+  "benchmarks": {
+    "rolling28": {
+      "MAE": 2.1862244897959187,
+      "RMSE": 2.6478682497853954,
+      "Poisson_deviance": 2.2763928373721716
+    },
+    "rolling7": {
+      "MAE": 2.2908163265306123,
+      "RMSE": 2.7823108460980537,
+      "Poisson_deviance": 2.3742186711108197
+    },
+    "weekday8": {
+      "MAE": 2.2544642857142856,
+      "RMSE": 2.884398457960639,
+      "Poisson_deviance": 2.940200208304836
+    }
+  },
+  "visible_snapshots": [
+    "8422cdbece3d71eef010d30c34f1ce05bfb2d4b1",
+    "09f7ea4d792e959b4ec0a2484ed9018d8217ac4e",
+    "aad00984bd1c746e84cc3d681977ae90f5018d24",
+    "c32287a48e4d5f5212d4f792d2f028dcd97cb282",
+    "f7014b7a30efcf7f5a6a37dc1639fc8e5ed338de",
+    "0b47294047c4a364fabb1b76653e0e1a135c67bc",
+    "65706b5461d5ad7b5867184f9bca3c33107165b6",
+    "aef038999c15d6bfd1d0bbeecdf424139f0e60df",
+    "5b58eb3d759650f752fd2a8a51a72b4be39316fd",
+    "f8dfbccb523d956c246435e99f408675332fcd8f",
+    "86dcf7c9d74709e4e6427ba431f2fc923a2fcc82",
+    "a9023dab3f81ca1a394a34fa5948253be39b3009",
+    "3ab05582b734e7b7560dca55461d38419a55bfe1",
+    "a9eda17864de6c05f9339e3dc7904253d3533fb7",
+    "cea4cb552604285617af559834b8dd1cffd8a705",
+    "8eae9e57542632c50e9b80e340229486bfc3a178",
+    "dad3bdb96f2d62d15ea0d0f288720f9c2ce7b5fe",
+    "90676c4956eb39f8dde8ba9f674e78e784b12b8a",
+    "b2a0c51071e31337b172d08df95a2f8b2355fbfa",
+    "15fb0deabc3e69b308feb62293348cc0c96a7d31",
+    "721a621b7b5710811b8771d7bafcdb2b0347390c",
+    "1c316764c8670853488ed74b59988dd30c43e451",
+    "b4677e3ba926ccf337f9f67245a276f8a3679ff8",
+    "a792f6efdf70b506c77a9cff6cd60f6e2c09ab55",
+    "13a8c41ce1ef71ece66fdeedc301f7c8efb75c61",
+    "4fb95a71c8a7e34f4a470a66e7c208fc8fb74fc5",
+    "e0a9af4b1d4c883f67fe34703d1c2ec363a8ef8a",
+    "5d5d8dd774a2e4513522295ed39ccce01d5ad7cf",
+    "85fe968c3d005cc46b63f26adc59d2b368d47c5a",
+    "b134628230f2742c62b69eb5439f607e5f5b14ec",
+    "0d2351e944e9c17b4d98e66579ad2ea4f70bd105",
+    "cc504c2d186c587e4e1aea3d5dd4cffbd0cc8083",
+    "1715f18094de6587fe391b7136d131ddcc656fd7",
+    "1ff6fc9a11ddcb8062273576e0998f5917acfe40",
+    "5421fcd6b07097f17c2e2297b934c4bff4ff0ec1",
+    "c09a2976150bad58b36ff31cfd1de75887f6f58b",
+    "b67c90b37ab583abee313ca32e3d4b5466b17c7e",
+    "cf83c3bbc8dd0f64ce32a4569b5bb73ddf57af56",
+    "22ea644f09f1c462a31406d9f69013bfb3572db1",
+    "621b695b1d6985f04d39242af3c7f42b326ba8c2",
+    "f812bd831e533905aabdb496789540a68022e591",
+    "ded0e40c678ec5446c0e01b0387c27dd9dd9fcaa",
+    "ac08966796658d8c4aceedc8c04b76e9947c0488",
+    "15ff714faf02d7ff05400cefd452e8bf03b6d9c9",
+    "b129496ff5bbd46229b736c91d056839c5e90edd",
+    "4a4a4fb2d32732dab9028a147bc06c887d824d93",
+    "cd17ffb10bc338861467469536c0dc7717ee132e",
+    "58dceacd816f7dd5c59affc6f26acb7e8ec96406",
+    "c224e6bca4c2aa4b5112799ad48734014e8dbe54",
+    "4603a4ece625f7adaa820477763cf6f3d551515f",
+    "4ddad86aa9c2cfd059593427f1512c0a371fc248",
+    "4c8318e42224d9fcd3404de5785e7b0e2d96592a",
+    "6a4fef5320c45664989d7e187df79c2b9808bdd4",
+    "d0949a122bcee3749f3845482e475b0c8f7aaa28",
+    "07f7345dee531117c774a8c55529b4a8168bcd42",
+    "07f7fc41464c15227f075fdeb1019b9da2909aa1",
+    "ea3f5b8f8f7dbd989efd7da0313c5aa51ac2a03c",
+    "df8a18cda13537d215d6903b0db11a8686648f19",
+    "0551109bb770e977963442f79543be6b3e81791e",
+    "3c0e75e7f0a9d321ba7d61d27feecdb2e11bb958",
+    "a3cf0a6c475622284df21f1430a4c662f62dfdda",
+    "ebbe2910a977541836d1e7f55ef6d852dc4667ab",
+    "9487fee53af5c19e997971d64f6c8cca84827bc3",
+    "d517cc970fbfe232567160bb3d4802000d9a9056",
+    "e12a6f986acd5e73d42af1c0ca32268eb4e270b6",
+    "fc6cf8030d8721a6b1dc2aaa382268beb5eb3145",
+    "a72b1676c6cb4a6fb417e07134569e4b29348233",
+    "02d4f1af2f7008eec6fa990ba05cf6fe3b747ec8",
+    "8b133fea4ab1ef76f635bcd2476b5cfd7015534e",
+    "02e7b9b1bf4919f847de1b0dbd2c586dd29d9f22",
+    "6646c1e0854bed15038fe49e306921e533cc8b4a",
+    "1b9a36c98b8072b1be9391c00e9de6052643ba73",
+    "2ebd5709abea2d4afd4b48c1efd62044dc10fbdf",
+    "449aa5d01d6ed886ed96772cf40aac507475316d",
+    "c6c687bad391cff0dfc197ac82ae6a82dbbfba69",
+    "96791c9cd0586336bdc85f147180f7fe25d77a3d",
+    "c2ef578a1b0692caf76d14922f6f95a2ecd25068",
+    "cd840cd26dd7b6a3548c09e4030298e95381986c",
+    "a0c4ea3bbf873ef4df74476a3047348dce3bde6d",
+    "1c4d193c8d210dc5158fdad5afabe6a1637608f0",
+    "56d851a5694d4f825b8ceebe909a5628f7c688f1",
+    "b29cea7e2252d930c9459ab55c3e68e60f308d81",
+    "1969db339ca1b2237e2903a9cf835f6bf0c4be71",
+    "0698bf2217e6fb0f972444f30202603aa641e9a7",
+    "cab5a96409930b660ba9470a0d23e5868c98a1f6",
+    "21467e7ec5aad799c9e10bd60f850ee68555f30e",
+    "eb6c65fec2e6ed8a3e1234346948f37a778ebf87",
+    "0cce7e9da5fed6c38e45e4a33b608fccaa637625",
+    "dac507f80fe59ef62d67e80be1e6b9558f126b33",
+    "5dcefbb4a4707769980eb4e992f0098fc9584a3f",
+    "23e06d63f09541d663994c0dc4219cb4e1a83b19",
+    "0ed9f581d044ff2cd9c1ab5ac3a3a9ae06bc4f9c",
+    "f8a2866b97d5379fef5a18d260ecae2081b2489a",
+    "b29f28f082c7defe0ef9c41ba109de4127c2ea40",
+    "444c129cb0a6582c18936cf141231acfccfa048a",
+    "96cfe49db46c71036c16dbb1b0e97b17feac92de",
+    "287ac390cb725d0e28a855571d450f9cf0a27998",
+    "a9cea4f3c486969c4399a55ec32cffb47c6006ae",
+    "bb91a929f6dabfa103dd825ed72610b85647a92c",
+    "2dcc74446c28bcf72ed52f8e38301388c17297b1",
+    "f530464c59cf0a75cc60ee4e9f361acae0b67798",
+    "66c4666219cf85aeaac814b3e5621afafe4a9791",
+    "6d0cea9f7cab438d9faa85e6eddbfc59b4726efd",
+    "0f70f301d714d0879c9fb61edd656abb72c823d8",
+    "11b28614353b475279a88f54199b792b23983a78",
+    "8613fcfe029fa01462c43e7c4dfc11b1e9daa2ad",
+    "dbf4407e02145ccc4376517617c30b95814e5c1f",
+    "cd4a614af69e3455af4a6442d889d755c7a37401",
+    "cfc13c22c5af775158ab2207751232321dbfe6c3",
+    "38a79f4c8d95caff59a4dfa647a4b48930a1985c",
+    "845522fbc2545397fb6a1e2b11a3591683ac76c7",
+    "cc4d3f87d6dcaf31c3d2f59d9ce1248e3a3bba9b",
+    "78c1e11702aa7f7f5a3d6ad7c380de4c4918a43b",
+    "a1d588208d43dbea8b6773b85890e11ab9a84806",
+    "477e56eb02dddd5bbdc3570c801620771841fcc8",
+    "333698e5bacda68cc6a3d823aaddca823f50c89c",
+    "87e8ef0f61adffd9e717989bbfa622027cab3262",
+    "8b86dfdd0ff1a84b1b2d07a18e99a43f43302fd2",
+    "7dbea55789a411fa2c79b47b6718843e2c12bf1c",
+    "adce44ce3afc85366f112ca3d2cb8c64e65fe62e",
+    "097ef99fc7a095633c1c9bc6cbf374ef9827b02d",
+    "fba55725d7ee49a7476c0adf3f34c3e1a06dc461",
+    "cd2480dae2bf24335c09dd7a0c7f1c0ae0848dff",
+    "7d63027a7074d884f85d4a33d671f0a35d8b3228",
+    "98b562066902e911fd1412cb7f804e791ddbf7aa",
+    "5cd6a0ebffdf6e8a20ccb241efed11f3208ed725",
+    "b63c579d0e0ff8c6fb461f8587dcf00803cfffd3",
+    "1fd9a53e63692ac40d3bba2de9dc54addb7d37ca",
+    "0b9116889efb22c6dbdfb838d6e8bbd429957cee",
+    "de22ee005a57561f53e4ab1455a07fda171da96b",
+    "fdfc056a93ab876098b2ffc5f059cfc03c3a981a",
+    "59d9105255594384b719c5acc8a02fd8d4627fb9",
+    "6a607651b624c80ec92472b9fa62a991bc5a2168",
+    "a2ff9e6bd1186f6ef6edd26ca699fed2aa02c3e7",
+    "7f259b58b9d43679f452c3f90b8ef41f1bccea48",
+    "33908495756945addc531ccaa1804c6896030166",
+    "ee5bd4484697d0970d1db8824d195da9b01984a6",
+    "5fc87131ab7aec0c023ca3bcb2519afaad4e4079",
+    "6a215c78c75979d138d60515f8385fe8380cb4b5",
+    "186ce251a806ec4d97496c295f3ce17387bbe8c0",
+    "0c3d98a3d2c2ce04a8b1c276b7766a963e4072f8",
+    "820ae9eace10f7f872ec3f2e53e2867db1046df4",
+    "ddfba4d87cc39ed18f944deb873065bc590b4e09",
+    "b103c417065945b5cbe10fbb70a24201c7d5ab82",
+    "01f43beaedeeda4ed1c9e95b4425a0f1501dcdec",
+    "71defd0be225b80397fea773c9d68425e35fa818",
+    "0270b9ab1a9f93e849ff5ec9ae2fcc50f28c14fc",
+    "e0566d1502eddc0aee16a8bf2f0819076e9117fd",
+    "a5a4102043a0b8b6b7be9d23cfd8395c825ab3fd",
+    "7f7a546078524cc7feb937a6e80bdf283e74e15d",
+    "6e8329769faec1e64dee6a1e09d6a0f4d5482e35",
+    "f67d54ad8e0b1d186e6ab7c7ef438d803146eec9",
+    "847f9686752d172f2c8538bb011f0f1a9841aef3",
+    "6f17f8da37afe8e8fe31b0e88ba545a71b9cd647",
+    "e1aa4e287ece8f6f941484149eee7bb1ce9d161b",
+    "60d2dca8e74627cfa059829df5ffddc898c98636",
+    "d28b628185663e94360e110fc46031b1f119b4ec",
+    "f3bbc50ab34a8100018f2d95f45c6ba053b0c77a",
+    "260a44652a4a1f5db7a7c66f9dd8cb102b11b6fb",
+    "392e650196ffc3675b70042da9fb55de9ef7446e",
+    "a8bad4b0a11da025cb2b472ac1b2a2dfabb254c2",
+    "29b256f88649dd1a81f166a4b23a39dbb1b746ca",
+    "7ee43ba33398c8c993401c171a3f002e965c8a68",
+    "83e80d7763194ffa3796b3f413b207998cc8bfc6",
+    "d32b8fbab894d7700b8d672f20123794e90f81cc",
+    "40bf9037f1a1e739fa371429759445b3c6faed76",
+    "308bb923a3cf33b11281e741fb1f1d04d17f14d8",
+    "2cbbd620713b085828281fc9b0dc72fee6d867f5",
+    "58ee75bc20113181b9ddf8029d4cbf3a62d8cd10",
+    "8c0e44caf8eb443ac21ee8d9963d39e6fbf2af2c",
+    "ea3173aef3d04883847b16345991e3f9e7461406"
+  ],
+  "visible_news_batches": [
+    "7af36e1a448ea13c169c4f97718d51ea94716a1222121b8e1b3f2d6e6169c163",
+    "594cd3a671b70c09b312ccb143e12c306baaaddf0139c664c2d8306b0e313f27",
+    "505de27b073eb4206fbb28ed2116e38827f842efbf062a8336ca11b6444b7b3b",
+    "93f577059e04ad2a41d3c4355ef8ebbb218053c6b0bcaddbdf51081eca8ede16",
+    "e2267a53758be4bd5d638998e37670725c38cc4128212dc82c3c9c1677296284",
+    "fd7055bcc1cc307ca03b52a7d191c821cbbcb5ed245cd6c5765ac6ef10853210",
+    "103a4eb35ce5fd5a899aae2ed7bb50622ff75b4a36327cf946405e44778480f0",
+    "b975ba2717f536e5cedea919a5d65774276d94b361e30ccb38afdecbe103eeaa",
+    "384fe9cccf6cd483d5de4cd84ff86d301892dd2ae5a4418ff42635043f6c71fd",
+    "f651b61fe62edef40dc2cb705a75c0bf6dc6fc6e56b946216971de6796807f20",
+    "a0d822fcdc06df556688338edf1b7773c349bb91c0c9b57bf84e0a5ab797c852",
+    "a6cbdf0ed3da41a625ff659a513bf97afb461f8d8f9fa357b888a7f18be0dd2a",
+    "025a3d4686ae1eae3414dd754ff20c9189fbaf86f5ea935db9a3becb3d4dbe3a",
+    "cee8d33dcea4f25b84819d3ad53d163e70aadee62d82937520a5a1a40ebd9b0b",
+    "4ff1d3c6c6302241fcde285face1226d1d8844a5b681141f541663b31a0eb112",
+    "101e692fdedea3a9c55c794efd39471f77b78343067afd780e7196ccdbc9182f",
+    "1a5b5729aaa15f58ec87671bcd05da9b0b13612717f601ab744aa8139f7da693",
+    "2d54ff8afef48d5136881d4fe292fc8ab5a9488b9b5ea67e93a2e71893186ca3",
+    "8cf409872458b9a56f21c722f5d55b811d45daaca56056f94ede84f5259e4a77",
+    "b0340c4a58017741a9f85a8b7b05a41eb39df1cf8eab647b14e9e88683436c31",
+    "051d428c0ab91cb8555749654d9f9cebd3698aa7a21876ca8423597f579fb146",
+    "f652fe3f497020da546fbe50bcf596679e89dad8d85fa85b0a722ca06baaf448",
+    "80f09c900bc49a0bf8ca019a3f36897dfa5b4e061a7e2e38f6cf8c6ac4b3d62b",
+    "773d4a8823cace2a90a8bdd254c1a9cf84f6b3cc039702764eae71d81c993f9d",
+    "bcf19e082ee5eba81c31b3e344ab9be72c8d05a518f68387917409014f6ba353",
+    "9b0090da1228da3ed21d7fad76db73c80361fb65bf0fb8dd1d3d798aa1ddbd0e",
+    "4164eca3493bb1cc4b46876eb29afa93af493c6c5db10252809e3d658362f3d1",
+    "b941b92975c1d905db0acf3278e34f3b66fb25dc2b8c5341fc3e0d19f5e75ea9",
+    "c34eed28f557705849131372fa22fa34d7491b8e3d7eace083e5b208eb7e9002",
+    "3cb8125c26b998fa3d2ed13fc89f5f8a5261e70b9ce2c4dfa5450f5eb95f17fb",
+    "5fd6c59cc068a9eaa2457ca884dae59e46be8cf3827fac7d1e1ab13e5cdfd9f7",
+    "33687b0ae6d0412f4f1a1a1f14781a0225dea5a4db0dd3d95e806f382cfd6070",
+    "91363d91d2d762b4ff484742f5a23ef55ba47266591ceccbcde4b1bd2baad554",
+    "9688ce2cc609df74d5a2c6878680343e5688768c10f4086ad6020453cc61a3c9",
+    "c06c2f93893f85bc808e39335a05347ccaaf4adbdccdad3d3b24b64c8348a2c0",
+    "bdb7a73fe9ab431329d79fc5c3a0ff0d9b8b6ccfe5036d4c69db826b0d2b7ba2",
+    "76d27630b1be46ad2cff507b5beed7bc7157d05dc260377d500ce6f3d98c5167",
+    "d345365e2a9d6bff1885964b4b5ffe8532d5064e899fe1fd37efb6695b895339",
+    "5ce6dc0b5719302117f8e8b5545e8c98159b0681e108c4a2ee3b0a2fe323a5eb",
+    "412e12750b71c9d0e34da064b6f01d3cbf400a21bddddd195f9d64ad35eec7e2",
+    "69dc79a658c35a7de94d1fc3d1b71efe9fc27d25c1e203f148f290b98a392be1",
+    "3770a8ef6d6fb0776cf247f084d454c95bc9b6f30f2a402e4cd9f5fd33aed3fd",
+    "a0ab7ac512838be6c8043e0d4ccded5e7a3c23047aa7f7a3319ee119c4b29383",
+    "3910cde8aaa62afdadf3f7410f3583093c0a273810ec880e79bc54237e71c0e7",
+    "af9e2237e8ec441a256fcfaab2a0759aeb5d274ab6acd58d5a9d725c907356a2",
+    "8ab2cfb00fd53b61cd85204d304a49df11260b753d4bde50d2b080f4d441e1f2",
+    "47128e9d60e215e14dd9b4471509a60de88ca95c3d1b728f84fe33594eca9d0f",
+    "8cf8eaaccfc8e8cb0e6f45d876161cc6374801354f90f3922b5ef377c12a9655",
+    "4ace625748c33fc77f99baa1ab9ced217512bfd4646e6beb878ec283b2bf2650",
+    "e644aa8c5383cf6b0303700aec43ea7f057cfe0195f50b2bf7e0461dd70667a2",
+    "9bffe6c1c1838eb219cef8fce748408d6810185b756fb2dd7c1f8f47b6937da2",
+    "be4ed38422099fd1eeda836adb9a5cfc1b08a2b93df17eb0676466c75efa2fff",
+    "47d366c65206205aa8963b9889937b09c4eb530e01477af0cebbf23f81e07c6f",
+    "4fa60610a5422e2054331d094a8ec78e278c259d2e7957c058fad83a9131669a",
+    "7bbed33ffc5a1afcccb43e4d18b2efff4a1715ae71fb5dda933353afdb32b686",
+    "31099e211de32b96a260cf1cbacd07edbcc5ee8f73974d2886496ed3822edfa7",
+    "7bb44abc89366aad541f8a5b21d0549a077fe07f088d5f83f82afb681664973a",
+    "45fea683187066ec9b3ca9c084079396d73ad4f538f778eb8c866bde4aad9619",
+    "69c7b6ae485203e89b6d29c3a1070dec37b0578d9b37f25da57db3891098b175",
+    "7900da1efa4641abbd4244d90596be679e042308c3605ac1bbbdcc45eb122ee2",
+    "b7e29b7f972df519d69e645992fcc52698fd03252c0c6a635c3d258ad154a04e",
+    "9166a477a1973b97e72e3e92ffe75a0b979f1426857da1e7ef64ce33b5cdc4af",
+    "d9f6b66b2772c1ce4ed64ce2d7e767fd6f7a811cb0125dd2fe29f50157de6036",
+    "96e61b9446c12d9b663106095134615b440c4ee9fdaec30464e960da656662cb",
+    "c0299489d679c03a4d851195278b3cd44490a2ac8289468628a0daf942bd6cf1",
+    "36b5bc61f2de9a251069586ba4f773f3d1818d891b78152dce9f57d876896152",
+    "715b3f280e94e46d4399edea6f67c15c97b0b1b796db1d3aa8e5d53301a5bb6c",
+    "56296a8fe6f38cc008990c7ce2d3193f3c0732969638c3fe16a044411703b8e5",
+    "be1a8fe389ab5ef2e3e0c68acac4255f1389ff9847e870a973a761746678fcc6",
+    "6603eb7ee16efbd3d3010e25f251c1412b14c2a3bf43303a8b553080200eb049",
+    "4b5371d6029516174add24d39e254f37341006604b1238a8ae97b94ee25dfbe3",
+    "dc87ad695bce59697ff221ca36c4619b4f43e32cbd9f8efa3c4c3a8d581ae989",
+    "9b128f5242baf7ca46804ba901768dbb6bf51e081c572a6494303e536b0ead54",
+    "34b9a35e9aaabd2927efba37c24337c2fa934c28a34b97a81e9d8a1bb48408f1",
+    "b64442578dc6dfc5f9861acae0f720a84ec601a18ca5c9fa87816ab9c1c9a3f7",
+    "431b89f7543c72519f323cc9ced54dda74c1399800bc291ffb87158ffe7c70ff",
+    "107583458693d216ded4f1861c12487549117f7a7698636fc2626a76ea22a4b6",
+    "a15f5ae3e796b1d819209f24f0e018de9ba67acaa8f81c4d8d19e147da9ea29c",
+    "accb612dd51355cd81e8720a6f8e784479204c58220a8602118cc7cb62286aee",
+    "db471755580f91054b03e37b4eb267fee8db0aa0ad734214f1bf17d8cfb0709d",
+    "34844d6f411ce944477394b072953de424a21c753c89cde69115a217c919a107",
+    "6e37c2b6672e1d5ae5dff59cf544b7256358f784f0d46f45fe82fee8b46b812c",
+    "82d3ecbdd127959ec3bd8ba03ee22a9d7cf63e1fa4b67d87d9501f8ad15b0185",
+    "eb2bdc0c4ab6ced967cb4c29f91018d422c81d207770cd7542b75e81eaecee7c",
+    "2b3de1d11ad1e42fa7064fb7c0ac2778530fdbbd88d7d141175d16123357a2f4",
+    "02e02f99addc7872cb7fa42a83cb366d5ea48f76a87cd2226d240589ec0fe4f3",
+    "cf05f5d9486e90aaa059c0ca265e6ffb6b3085690856c65731a60954849bbf32",
+    "8a439e03e732e76ae30d2bd18bfc21ec86df77b0e59aef0016c5e1c2b1a7b731",
+    "b69ff13e869830b82275298bfabc96177c0b749f61af684edf90304d50143ec7",
+    "49088ba413b78398d76779a3e846c947727d34ae8a0caf1da99ff965008c8603",
+    "80d5d40f5686b6425e1b95964403dcaf1069c6d15100ab64968df5c2d6a28b93",
+    "00ab90c8849c4c3c602ce2f26ae1e4e635ab9dc92c6bed2a0d294542039087d8",
+    "010024a7d30c386462a19ac27b21c181c5d291e2aae60f32bad73031c3c5dcc3",
+    "c05b9d435ddd2fb458cf45f31b9b2c9b14feb79b6c25afd7d79fd0cab6350f58",
+    "8c223f14703d2df7a6d2c85b8902e83f9feae412f7432aa3678517669d239652",
+    "4936199fae0046452560506730ba954da57e49ee142f3deed11a1576766cb3ba",
+    "d71c54e3c4f7050d27b58b3794de359b8cb8850e4ec4bc5cd8008603e774cd48",
+    "b663001c2e6b9e8473d14a76c0e2da5d8901bc1eca68c6e82c2d7477733b000a",
+    "7e78084cbe6968fc318fa2dfdb7f4c97bd402e4ed75684d0a61d962b98461f0d",
+    "137e412c38bf393c00aabc97ebb5e6afca91425c971adaf59db6ee7566068974",
+    "8668b268fdc78ddd3cc06d378eb147837ede5d5ff89346f55d0e5c4d5a80b7f2",
+    "fda151260036a040eae0f5cd567ae80b764f6d20c320cc917272748a46f9d498",
+    "d2cc24b76d6e05c316a3b15826c1c36ebc950a5a1079ae11498324235f94c06e",
+    "0d6a4b4dc4fd6a817adf925bac599432da4cdcbcc8c8b1d1b20bd13cc628e27b",
+    "973c510cecea7d7001ac04eaee8e0eaca8c2668b93694880d5bf1a6c8aea8ea9",
+    "47ccb93b48a8b573d3c652d2b739d71d838812a418fe4915af48740242ee3f8b",
+    "8f0072982a8d1d5999bfeb1e44f09e283b31e92228f86f9ca3f36ad78b21b124",
+    "7d627b4da4612de710702c04a7bbd582b5ca26d1e663544de8004dbe5d490ad6",
+    "d3ec7f4771b538dda0723256d8f4af2a133ba833bc889392d9aa824bcd9a68a0",
+    "c71cafb46a0f830c105e0f6068322a3395e6087851c39b2ea141dbbddd341f01",
+    "84fa769e1525921d54bb4b4712c0edad43438b6154b1f431129efec052d6a28d",
+    "862e49c40a26daef6c094e407175bdd5d7286eba87657a74497b1d0fd2c74452",
+    "58c40202532612d711ef43ef8f9cdc408d82bce56018ef8a4d70e2df95d17e2f",
+    "e612ca0cbee12258829637dfa6e1d55962c6a27a8526c904ffa90f9fe0f69fd1",
+    "f55ee8ee3efc464cc412ebcd535b0e23425e13c737d5b20805ab1983baa715c1",
+    "95e8346d6c157cbe7de59d86b9ad415f861c918a7c6d5fd8d6782306a0ed21b5",
+    "a507c5372b452d08e261dae98255ddcd8453ef618925a3107a51d7b44883a867",
+    "6fe3750a1e6ec50eed119f62b00e1b5cba2a57ad85c95b17d76ebeb82ae1969e",
+    "515fe15269f4c7447c8647008b6f145a481e36f04862605f44eba34a7d670d65",
+    "5c1fc106987c56395d20a4f35d16bfc722bba55febf0759af5d2fea25266649e",
+    "0a6b9014793ffdeec9f618148504d4e2a5612eb5f3fae2decadb4c338f511cea",
+    "f426760815773796d7559eb60b2a156310f4a8f4104e26e8c5f852eb95d13949",
+    "6ae55ba70b85b873f0cc27b6cb8d3af8ba860080d82ba6519d53175040e6c57d",
+    "c76dfe80e4d73b0cb6768b019765653517955e25906f80e72d5a71bd3388f1b4",
+    "210e936965fe7c2eed502226b669329beac4259541bb22eee9209a84a7a1127f",
+    "a0dc35bb61ba46ecd72a614210e1ca5ca13754603f70afb65d1bfd429793e3d4",
+    "24766fcfaef7400354b18aeeac9dd7e2e9749d92bc4ac8b346f9c0e40df86096",
+    "f27b19cacc0db3dc147959e87a5830743b8211130e4ae2bcec43c867bc4cafb2",
+    "62547a55af001e999f9b8f4d0417fabe746513bd573e5ffa6505f5ab43644a05",
+    "6cb1cd21e08d4dd21bf073a0db53dd48fc193d9e75016a99ebf692ab0f84786c",
+    "d9c1fe25e369530332755466ce45ac9da9141adfc8e75ca315f483befbc69c15",
+    "6703c3e8fe62ade80b55189cd3f193578b4c3442bb0c30e70e44b3a8df6fac18",
+    "3eea6c473f7fd1d1ac6b87789dd6053dd8e16126afc849058d072c2a4f89f809",
+    "2ae78464112ab6af071ba2ab56a94f0bef44384f9b1b9b268498c9c4c1c3407b",
+    "940573151f571f8190993a79ab30a4d2d2b7174099fe253a2406289d916ed0e1",
+    "27347c5fe1cb5c7669e7d51517177c982fb8dd18080f8c73ac3d644cc159fdbb",
+    "90e5f773988ad76458e927c70bfb1cd1cab010814302638200a1fd52feedc76e",
+    "5713a3c7800ab87adb495fb3c316996eee28984151752d57c23de36834c6ef47",
+    "c2571d4529f0232356a334bb5c3e8e9b9842e148e3f95bdbc22cd319c83610b8",
+    "40a9ef9a12f8f14dcff49d686bc9f2c281b02e8b8aefbf9b5474baf752eada2f",
+    "1cdbc242dc9d9009da672fab205bb669cf718be298d3549caf90b22bea5f64ff",
+    "3130fe8162782413022b5f0ae826655c8e1aaabb1b6b7a1bf95307f4d975995b",
+    "a73ffb6e96790f0e348f9509f34c40454076fb39de63f0128338b11d29a12554",
+    "12e5073316912dbe651a610af375e3f7b79e61de93e8d430cd2c95c14c64f27a",
+    "ca37160ed5e612262f302ccc985bdf645683bdf0a7b587796b66305b6c51913e",
+    "000bfc6f1ed145d05e074e4a352f78433d56f08d2112a20c6e363b1dc774c599",
+    "530e44f3c729db2a8cde24119a74152efa5b3a6020469c7841b140a87a8d8d63",
+    "ee7402dfc65899f71469cda314f068678c8afd0143d2a94404be87c5dec1b091",
+    "eec0b9c708184bc43c72707be51f5fd08deceea84a568aacfa12ff489a6d8b4b",
+    "63aa11ac447dfa23263151ea65a3985e030fb995ef53f6da05e771074c0a1a7d",
+    "61f807ab292308421ee18e5c5fd683cf986e8e2b9decf800a6f6964410d139b9",
+    "40e06577d658088230f17a37408daf3c0782e2a17f3c2233eeffa1e710d1d8b4",
+    "8a50db10e11acc3882628ffaaccf5532d19bcf10a360217f80678fc6321e687a",
+    "8c0e57d2787f44e87a08174bd6130ff2dfeaf418c154a9db588baac0936c5ff6",
+    "ae715b077190fa9bc65f9245f83d7d77f2dfd3a7eb9216e9d8a7d49f2cc85020",
+    "a2ec7e70124b2598cee1f62a3ae6f2a4ed10a681e9f57e9a2ac1dced5c775669",
+    "bf4a62cf72420f535d2ca71456761a77e3cea8346832e863405eab1f2206156e",
+    "57844f1165ebbb0bdcbaceeabde220867db40fcab597f1ac487620428e2ac1d8",
+    "f4d337f0f7bafc0c7e5ecaa88ea90c345e77bd49f992e09460fba11eca304e5c",
+    "b75204a0d655aeec459d7b407cc0e95d4dc42b8b9109f7b0aaaa8624b20f2972",
+    "714200b73fe5f39ed1e76b293a27da13b8985fdcc0aa5f13e92765fd90f8bd8e",
+    "83da39c66c5da76e3bf793dd8385d054da486a6c0a70c2fe7a20f8cd7b39cf8f",
+    "b7392a1230e5ebfb983a92f6934760db749b20e5c4c86453aeb82883b09a2288",
+    "a3ba3b71f9dbba21337305eabf86fa23369dfb293e24bc6641cbb7474cd059fd",
+    "96bd98bec450ed7f8208e962bb4964c600a05fc90562552729369d6efc09d9ea",
+    "ba4351c2741ce7ee84ee86e0f597b0bcede5d86cfcfaa3850ad7cafacde812b8",
+    "6f2043a8f1473717cc15a4bfb10740057064dce37ac7b629df83382f2ce4d4f0",
+    "b0facb886dc62b61315e46c6b2eee20a67d95a03fa4e9d6756e4fbf1a0b99abc",
+    "d7e03deb989a458a5f11056b7a4587f2768b952756a1c7d59af53e975fe9587c",
+    "1eeee9f423310f11b1e47a4dbf77dcb04ea1902d60a244e24161c1e2d412059c",
+    "13976c05f1718ff6aa424bb3548c985f6975e56b6ba4bf94831544dc82e81776"
+  ],
+  "max_selection_target_end": "2026-09-10 00:00:00+00:00",
+  "max_selection_label_available_at": "2026-09-10 09:48:20+00:00",
+  "test_rows_seen_during_selection": 0,
+  "historical_holdout_reused": true,
+  "holdout_note": "Version 1 already scored this historical period; version 2 excludes it from tuning but does not make it a new unseen holdout"
+}

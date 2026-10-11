@@ -6,10 +6,11 @@ AI was the primary engineering tool for this Python project. The assistant
 researched public data sources, implemented acquisition and forecasting code,
 wrote adversarial leakage tests, executed experiments, diagnosed model behavior,
 and produced the README, notebook, reports, and reproducible project archive.
-The human supplied the problem and constraints, reviewed the results, and
-requested the major modeling revision after observing nearly constant forecasts.
-This document records the work performed in the project conversation; it does
-not imply an independent human audit or invent an agent delegation history.
+The human supplied the problem and constraints, reviewed the results, and 
+consulted a secondary AI (Claude) to audit the initial prototype. The human 
+then applied Claude's diagnosis (excessive dimensionality and Poisson count formulation) 
+to request the major modeling revision. This document records the work performed across these tools; 
+it does not imply an independent human audit or invent an agent delegation history.
 
 The project forecasts Kyiv city's next-day air-alert start count for civilian
 shelter staffing and disruption planning. Historical alert counts are combined
@@ -32,8 +33,8 @@ delegated to that assistant, rather than separate agents or fictitious reviewers
 | --- | --- | --- |
 | Problem formulation | Defined the Kyiv city count target, forecast timing, and civilian planning use case. | Requested a real-world Ukraine alert forecasting project. |
 | Data and provenance | Implemented versioned public alert acquisition, archived news extraction, source hashes, and availability evidence. | Required recent available data and text/media inputs with strict temporal validity. |
-| Feature engineering | Built per-origin historical features and training-only text transformations. | Identified excessive dimensionality relative to roughly 150 training rows. |
-| Modeling | Implemented baselines, the original Ridge alternative, then compact log-link Poisson candidates and a recent-level offset. | Challenged flat forecasts and requested Poisson regression without negative-value clipping. |
+| Feature engineering | Built per-origin historical features and training-only text transformations. | Prompted feature reduction after Claude review identified ~350 inputs vs ~150 rows. |
+| Modeling | Implemented baselines, the original Ridge alternative, then compact log-link Poisson candidates and a recent-level offset. | Challenged flat forecasts; requested Poisson regression based on Claude review recommendations. |
 | Model selection | Implemented validation-only comparisons and separate locked selection/final-evaluation stages. | Required the test window to stay outside model selection. |
 | Verification and delivery | Wrote and ran tests, inspected outputs, executed notebook Python cells, documented limitations, and packaged the project. | Reviewed the delivered behavior and requested this AI usage record. |
 

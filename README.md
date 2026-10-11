@@ -73,8 +73,8 @@ one. A prospective period is required for an independent generalization claim.
 
 ## Run
 
-Use **Python 3.12** for the pinned dependencies. After extracting, open a terminal
-inside `ukraine_alerts`:
+Use **Python 3.12** for the pinned dependencies. After cloning, open a terminal in the 
+repo root:
 
 ```bash
 python -m venv .venv
